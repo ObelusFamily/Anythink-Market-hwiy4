@@ -194,8 +194,8 @@ router.put("/:item", auth.required, function(req, res, next) {
         req.item.tagList = req.body.item.tagList;
       }
       
-      if (typeof req.body.item.titleList !== "undefined") {
-        req.item.titleList = req.body.item.titleList;
+      if (typeof req.body.item.title !== "undefined") {
+        req.item.title = req.body.item.title;
       }
 
       req.item
